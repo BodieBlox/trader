@@ -35,7 +35,7 @@ function Upgrade(name, cost, tooltip, effect) {
 	this.div = function() {
 		var costDiv = "<div class='upCost'>";
 		for (var i in this.cost) {
-			costDiv += "<div class='upCostRes'><span class='upCostResAmt'>" + this.cost[i] + "×</span><img src='graphics/" + resources[i].name + ".png'>"+ "</div>";
+			costDiv += "<div class='upCostRes'><span class='upCostResAmt'>" + this.cost[i] + "×</span><img src='" + resources[i].name + ".png'>"+ "</div>";
 		}
 		costDiv += "</div>";
 		return $(
